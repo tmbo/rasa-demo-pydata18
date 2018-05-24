@@ -1,0 +1,40 @@
+
+intents:
+- greet
+- goodbye
+- mood_affirm
+- mood_deny
+- mood_great
+- mood_unhappy
+
+slots:
+  img_api_response:
+    type: unfeaturized
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_unclear
+- __main__.ApiAction
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up: {img_api_response}"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_unclear:
+  - text: "I am not sure what you are aiming for."
+  
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
