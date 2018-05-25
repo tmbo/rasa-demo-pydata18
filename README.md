@@ -18,5 +18,19 @@ will be explained and created in the notebooks.
 
 Once you ran the notebooks, there should be a `models/` folder containing your trained Rasa model.
 
+## Additional Material
+
+### Running duckling locally
+- run the duckling docker container
+	```bash
+	docker run -p 8000:8000 rasa/duckling
+	```
+
+- add the duckling component to your pipeline:
+	```yaml
+	- name: "ner_duckling_http"
+	  url: localhost:8000
+	```
+
 ## Slides
 TBC - I'll add the slides once the talk is done 
