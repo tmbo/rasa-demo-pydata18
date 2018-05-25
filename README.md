@@ -1,6 +1,7 @@
 # Conversational AI with Rasa NLU and Core
 Demo application for the PyData Conference in Amsterdam 2018
 
+You can find the slides for the presentation at [Slideshare](https://www.slideshare.net/TomBocklisch/conversational-ai-with-rasa-pydata-workshop-98683172).
 
 ## Installation
 The notebooks contain the installation instructions as their first step. Basically,
